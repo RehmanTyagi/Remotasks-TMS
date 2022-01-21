@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remotasks Onsite TMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container first-container">
+        <h1 class="logo">Remotasks</h1>
+        <p class="TMS">Tasks Management System</p>
+
+        <div class="center-info">
+            <h2>Onsite Center </h2>
+            <div>
+
+                <p class="address">House No.584, Street No.2, B-Block, Rajiv Nagar, Mandoli, New Delhi 110093, India</p>
+            </div>
+
+        </div>
+        <div class="owner-center">
+
+            <div class="owner-box">
+                <h2>Lead: Rehman Tyagi</h2>
+                <h3 class="active-tasker">Employee's: 10</h3>
+
+            </div>
+            <div class="center-box">
+                <h2 class="current-project">Current Project</h2>
+                <h3 class="active-project">Official Bee Lidar Group</h3>
+            </div>
+            <div class="center-status">
+                <h2>Center Status</h2>
+                <h3 class="active-inactive">Waiting for Approval</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container second-container">
+        <form onsubmit="event.preventDefault();onFormSubmit();" onsubmit="onFormSubmit()" id="mainData" class="fill-data">
+            <label for="employeeName">Employee Name</label>
+            <select name="employeeName" id="employeeName">
+                <option class="option" value="Rehman">Rehman</option>
+                <option class="option" value="Manish">Manish</option>
+                <option class="option" value="Nitin">Nitin</option>
+                <option class="option" value="Trainee's">Trainee's</option>
+            </select>
+            <label for="taskId">Task Id</label>
+            <input id="taskId" name="taskId" type="text" placeholder="Fill Task ID">
+            <label for="dateTime">Submission Date</label>
+            <input id="submissionDate" class="datetime" name="dateTime" type="datetime-local">
+            <label for="projectName">Project Name</label>
+            <input id="projectName" class="projectname" name="projectName" disabled value="Official Bee Lidar Group" type="text">
+
+            <button id="submit" class="submit">Submit</button>
+
+        </form>
+    </div>
+    <div class="container third-Container">
+
+        <table id="displayBox">
+            <tr id="row-box">
+                <td class="title-row">Emoplyee Name</td>
+                <td class="title-row">Task Id</td>
+                <td class="title-row">Submission Date</td>
+                <td class="title-row">Project Name</td>
+                <td class="title-row">Edit/Delete</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

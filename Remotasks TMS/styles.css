@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #27ae60;
+}
+
+
+/* first container css */
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #fff;
+    color: #27ae60;
+    padding: .3em;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.center-info h2,
+p {
+    background-color: #fff;
+    color: #27ae60;
+    text-align: right;
+    display: inline-block;
+    padding: .3em;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.owner-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.owner-box,
+.center-box,
+.center-status {
+    background-color: #fff;
+    padding: .8em;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px;
+}
+
+.TMS {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.active-inactive,
+.active-project,
+.active-tasker {
+    background-color: #f39c12;
+    border-radius: 10px;
+    margin: .5rem;
+    padding: .5em;
+}
+
+.active-tasker,
+.active-project {
+    background-color: #2ecc71;
+}
+
+
+/* second container css */
+
+.fill-data {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.fill-data label {
+    font-size: 1.5rem;
+    margin: .5em;
+}
+
+.fill-data input {
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#employeeName {
+    padding: .7em;
+}
+
+.submit {
+    padding: 1em;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #27ae60;
+}
+
+input:focus,
+#employeeName:focus {
+    color: white;
+    background-color: #2980b9;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.submit:hover {
+    background-color: #2980b9;
+    color: white;
+    transition: .5s;
+}
+
+.datetime:focus {
+    background-color: #2980b9;
+}
+
+
+/* third container css */
+
+table {
+    padding: 1em;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.title-row {
+    font-size: 1.4rem;
+    color: white;
+    background-color: black;
+}
+
+#row-box {
+    overflow: scroll;
+    /* height: 400px; */
+    background-color: red;
+    text-align: center;
+}
