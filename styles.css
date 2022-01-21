@@ -154,7 +154,6 @@ td {
 
 .edit,
 .delete {
-    text-decoration: underline;
     color: blue;
     cursor: pointer;
     padding: .1em;
