@@ -163,6 +163,13 @@ td {
     color: #fff;
 }
 
+.edit:hover,
+.delete:hover{
+    background-color:blue;
+    color:#fff;
+    transition:.4s;
+}
+
 td {
     padding: .5em;
     background-color: #fff;
