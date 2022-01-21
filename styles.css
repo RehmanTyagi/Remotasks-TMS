@@ -158,9 +158,14 @@ td {
     color: blue;
     cursor: pointer;
     padding: .1em;
+    background-color: #000;
+    padding: .3em .7em;
+    border-radius: 5px;
+    color: #fff;
 }
 
 td {
+    padding: .5em;
     background-color: #fff;
     color: #000;
 }
