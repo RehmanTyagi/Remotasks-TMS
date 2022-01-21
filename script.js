@@ -15,9 +15,7 @@ function addData() {
     if (!taskId) {
         alert("Task Id is required to be proceed further")
         return;
-    }
-
-    if (!submissionDate) {
+    } else if (!submissionDate) {
         alert("Submission Date is required to be proceed further")
         return;
     }
@@ -39,7 +37,23 @@ function addData() {
     cell2.innerHTML = taskId;
     cell3.innerHTML = submissionDate;
     cell4.innerHTML = projectName;
-    cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>
-    <a onClick="onDelete(this)">Delete</a>`;;
+    cell5.innerHTML = `<a class="edit" onClick="onEdit(this)">Edit</a>
+    <a class="delete" onClick="onDelete(this)">Delete</a>`;
 
+}
+
+function onEdit(td) {
+    selectedRow = td.parentElement.parentElement;
+    document.getElementById("employeeName").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("taskId").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("submissionDate").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("projectName").value = selectedRow.cells[3].innerHTML;
+}
+
+function onDelete(td) {
+    if (confirm('Are you sure to delete this record ?')) {
+        row = td.parentElement.parentElement;
+        document.getElementById("displayBox").deleteRow(row.rowIndex);
+        resetForm();
+    }
 }

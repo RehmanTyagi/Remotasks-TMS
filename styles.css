@@ -151,3 +151,16 @@ td {
     background-color: red;
     text-align: center;
 }
+
+.edit,
+.delete {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    padding: .1em;
+}
+
+td {
+    background-color: #fff;
+    color: #000;
+}
